@@ -11,7 +11,6 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="IMCSwiftIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -60,7 +59,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" maximumValue="220" translatesAutoresizingMaskIntoConstraints="NO" id="Zy6-Tf-t8X">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="160" maximumValue="220" translatesAutoresizingMaskIntoConstraints="NO" id="Zy6-Tf-t8X">
                                                 <rect key="frame" x="263" y="4" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
@@ -164,6 +163,32 @@
                                             <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJH-D7-2ex"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IZZ-LS-oDj" userLabel="Avatar">
+                                        <rect key="frame" x="31" y="463" width="87" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6SL-px-uds" userLabel="Avatar">
+                                        <rect key="frame" x="278" y="463" width="87" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYX-0w-Wwh">
+                                        <rect key="frame" x="44" y="302" width="305" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTb-hL-Ljk">
+                                        <rect key="frame" x="44" y="385" width="321" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgy-Cn-fnk">
+                                        <rect key="frame" x="153" y="463" width="87" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
@@ -178,13 +203,19 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avatarImage" destination="IZZ-LS-oDj" id="CM3-W2-DhU"/>
+                        <outlet property="avatarImage2" destination="Rgy-Cn-fnk" id="5g8-MV-TeO"/>
+                        <outlet property="avatarImage3" destination="6SL-px-uds" id="CMB-RH-oEH"/>
+                        <outlet property="healthyLabel" destination="iTb-hL-Ljk" id="vRD-wB-rW3"/>
                         <outlet property="heightLabel" destination="NOE-2G-v6t" id="HL1-qq-SVu"/>
                         <outlet property="num1" destination="qfl-iS-bRR" id="oI7-si-Fb5"/>
                         <outlet property="num2" destination="gCE-E1-maW" id="f02-it-TVE"/>
+                        <outlet property="result" destination="IYX-0w-Wwh" id="UJg-gv-956"/>
                         <outlet property="resultDown" destination="AQu-dE-pck" id="ZYf-13-6JK"/>
                         <outlet property="weightLabel" destination="ugg-Mb-0iS" id="ceC-Rd-cvu"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1116.793893129771" y="-581.69014084507046"/>
         </scene>
